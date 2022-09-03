@@ -1,0 +1,19 @@
+.avatar {
+  @apply inline-block rounded-full;
+
+  &.-sm {
+    @apply h-8 w-8;
+  }
+
+  &.-md {
+    @apply h-10 w-10;
+  }
+
+  &.-lg {
+    @apply h-12 w-12;
+  }
+
+  &.-rounded {
+    @apply rounded-md;
+  }
+}

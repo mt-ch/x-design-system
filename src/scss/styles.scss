@@ -1,0 +1,16 @@
+// // tailwind --------------------
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+// main elements
+@import 'forms';
+@import 'hover';
+@import 'fonts';
+@import 'aspect-ratios';
+@import 'layout';
+@import 'typography';
+@import 'animations';
+
+// components
+@import 'components';

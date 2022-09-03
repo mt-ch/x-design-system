@@ -1,0 +1,107 @@
+.png-btn {
+  @apply inline-flex items-center border border-transparent font-medium rounded shadow-sm font-secondary cursor-pointer transition-all duration-200 ease-linear;
+
+  > .label {
+    @apply flex items-center justify-center;
+  }
+
+  &:focus {
+    @apply outline-none ring-2 ring-offset-2;
+  }
+
+//   @include hover {
+//     @apply bg-indigo-700;
+//   }
+
+  &.-xs {
+    @apply px-2.5 py-1.5 text-xs;
+  }
+
+  &.-size-small {
+    @apply px-3 py-2 text-sm;
+  }
+
+  &.-size-medium {
+    @apply px-4 py-2 text-sm;
+  }
+
+  &.-size-large {
+    @apply px-4 py-2 text-base;
+  }
+
+  &.-xl {
+    @apply px-6 py-3 text-base;
+  }
+
+  &.-variant-primary {
+    @apply bg-primary-500 text-white;
+
+    &:focus {
+      @apply ring-primary-500;
+    }
+
+    @include hover {
+      @apply bg-primary-700;
+    }
+  }
+
+  &.-variant-secondary {
+    @apply bg-secondary-500 text-white;
+
+    &:focus {
+      @apply ring-secondary-500;
+    }
+
+    @include hover {
+      @apply bg-secondary-700;
+    }
+  }
+
+  // &.-light {
+  //   @apply bg-slate text-black;
+
+  //   &:focus {
+  //     @apply ring-slate;
+  //   }
+
+  //   @include hover {
+  //     @apply bg-slate;
+  //   }
+  // }
+
+//   &.-dark {
+//     @apply bg-slate-700 text-white;
+
+//     &:focus {
+//       @apply ring-slate-700;
+//     }
+
+//     @include hover {
+//       @apply bg-slate-900;
+//     }
+//   }
+
+  //   &.-compact {
+  //     @apply px-5;
+  //   }
+
+  //   &.-icon-only {
+  //     @apply p-0;
+
+  //     > .label {
+  //       @apply flex items-center justify-center h-full w-full;
+  //     }
+  //   }
+
+  //   &:disabled {
+  //     @apply bg-none bg-gray-mid border-gray-mid cursor-default #{!important};
+
+  //     > .label {
+  //       @apply text-white;
+  //     }
+  //   }
+
+  &.-rounded{
+    @apply rounded-full;
+  }
+}
