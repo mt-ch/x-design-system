@@ -1,0 +1,17 @@
+/* @import 'tailwindcss/base';
+@import './design-tokens/index.css';
+@import './utlilities/index.css';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'tailwindcss/screens';
+
+@import './components/index'; */
+
+@tailwind base;
+@import './design-tokens/index.css';
+@tailwind components;
+@tailwind utilities;
+
+@import "./components/elements/button.scss";
+@import "./components/elements/avatar.scss";
+@import "./components/elements/badge.scss";

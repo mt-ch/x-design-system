@@ -1,30 +1,4 @@
-const purgeConfig = require('./tailwind.purge.config.cjs')
 const colors = require('tailwindcss/colors')
-
-const foundationColors = {
-  'jpl-red': '#E31937',
-  'jpl-red-light': '#E73B54',
-  'jpl-red-dark': '#C1152E',
-  'jpl-red-darker': '#5C0411',
-  'jpl-aqua': '#489FDF',
-  blue: '#8BCBFA',
-  'dark-blue': '#004562',
-  'jpl-sky-blue': '#53C8ED',
-  'jpl-sky-blue-dark': '#0080A4',
-  green: '#14C97A',
-}
-
-const semanticColors = {
-  'alert-gold': '#FFBA32',
-  'alert-gold-light': '#FFF9EB',
-  'disabled-gray': '#D8D8D8', // same as Light Mid Gray
-  'error-red': '#C1152E', // same as JPL Red Dark
-  'error-red-light': '#FFE8EB',
-  'focus-blue': '#1871C9',
-  'focus-blue-light': '#E8F1FA',
-  'success-green': '#33A17B',
-  'success-green-light': '#E1F5EE',
-}
 
 const grayScale = {
   white: '#FFFFFF',
@@ -44,9 +18,6 @@ const socialColors = {
   youtube: '#FF0000',
 }
 
-// Font stack optimised for built-in fonts of each major operating system, with support for emojis.
-// Only displayed if the site’s web fonts fail to load.
-// See https://polaris.shopify.com/design/typography#section-font-stack.
 const fallbackFontStack = [
   '-apple-system',
   'BlinkMacSystemFont',
@@ -62,245 +33,193 @@ const fallbackFontStack = [
 ]
 
 module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
-    "./src/stories/**/*.{vue,js,ts,jsx,tsx}",
-    "./src/components/**/*.{vue,js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx, mdx}"],
   mode: "jit",
   theme: {
     screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1280px',
-      '2xl': '1440px',
-      '3xl': '1800px',
-      '4xl': '1900px',
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1440px",
+      "3xl": "1800px",
+      "4xl": "1900px",
       // Media queries to detect the user’s input modality real, non-simulated hover support.
-      'can-hover': { raw: '(hover: hover)' },
-      'no-hover': { raw: '(hover: none)' },
-    },
-    container: {
-      screens: {
-        sm: '640px',
-        md: '768px',
-        lg: '1024px',
-        xl: '1280px',
-        // See documentation for container widths and breakpoints setup.
-        '2xl': '1320px',
-        '3xl': '1320px',
-      },
-      padding: '1rem', // use .px-0 as needed to override default padding
+      "can-hover": { raw: "(hover: hover)" },
+      "no-hover": { raw: "(hover: none)" },
     },
     colors: {
-      // ...foundationColors,
-      // ...grayScale,
-      // ...semanticColors,
-      // ...socialColors,
-      transparent: 'transparent',
+      ...grayScale,
+      ...socialColors,
+      transparent: "transparent",
       current: 'currentColor',
-      black: colors.black,
-      white: colors.white,
-      gray: colors.gray,
-      emerald: colors.emerald,
-      indigo: colors.indigo,
-      yellow: colors.yellow,
-      primary: {
-        50: "#f4f5f7",
-        100: "#e9ebf0",
-        200: "#c8cdd9",
-        300: "#a6afc2",
-        400: "#647295",
-        500: "#213667",
-        600: "#1e315d",
-        700: "#19294d",
-        800: "#14203e",
-        900: "#101a32",
-      },
-      secondary: {
-        DEFAULT: "#3E90DB",
-        50: "#D9E9F8",
-        100: "#C8DFF5",
-        200: "#A5CBEE",
-        300: "#83B8E8",
-        400: "#60A4E1",
-        500: "#3E90DB",
-        600: "#2374BE",
-        700: "#1B578E",
-        800: "#123A5F",
-        900: "#091D30",
-      },
+      "warning": "var(--png-color_warning)",
+      "warning-light": "var(--png-color_warning-light)",
+      "warning-dark": "var(--png-color_warning-dark)",
+
+      
+      "background-primary": "var(--png-color_background-primary)",
+      "background-secondary": "var(--png-color_background-secondary)",
+      "background-brand-primary": "var(--png-color_background-brand-primary)",
+      "background-brand-secondary": "var(--png-color_background-brand-secondary)",
+      "background-accent": "var(--png-color_background-accent)",
+      "background-alert": "var(--png-color_background-alert)",
+      "content-primary": "var(--png-color_content-primary)",
+      "content-secondary": "var(--png-color_content-secondary)",
+      "content-action": "var(--png-color_content-action)",
+      "content-active": "var(--png-color_content-active)",
+      "content-inactive": "var(--png-color_content-inactive)",
+      "content-negative": "var(--png-color_content-negative)",
+      "content-warning": "var(--png-color_content-warning)",
+      "content-positive": "var(--png-color_content-positive)",
+      "content-information": "var(--png-color_content-information)",
+      "content-accent": "var(--png-color_content-accent)",
+      "content-visited": "var(--png-color_content-visited)",
+      "border-primary": "var(--png-color_border-primary)",
+      "border-secondary": "var(--png-color_border-secondary)",
+      "border-active": "var(--png-color_border-active)",
+      "border-inactive": "var(--png-color_border-inactive)",
+      "border-negative": "var(--png-color_border-negative)",
+      "border-warning": "var(--png-color_border-warning)",
+      "border-positive": "var(--png-color_border-positive)",
+      "border-information": "var(--png-color_border-information)",
+      "hover-primary": "var(--png-color_hover-primary)",
+      "hover-secondary": "var(--png-color_hover-secondary)",
+      "hover-primary-transparent": "var(--png-color_hover-primary-transparent)",
+      "hover-secondary-transparent": "var(--png-color_hover-secondary-transparent)",
+      "hover-brand": "var(--png-color_hover-brand)",
+      "hover-accent": "var(--png-color_hover-accent)",
+      "active-primary": "var(--png-color_active-primary)",
+      "active-primary-transparent": "var(--png-color_active-primary-transparent)",
+      "active-secondary-transparent": "var(--png-color_active-secondary-transparent)",
+      "active-tertiary": "var(--png-color_active-tertiary)",
+      "active-tertiary-transparent": "var(--png-color_active-tertiary-transparent)",
+      "active-brand": "var(--png-color_active-brand)",
+      "active-accent": "var(--png-color_active-accent)",
+      "active-primary-reversed-transparent": "var(--png-color_active-primary-reversed-transparent)",
+      "active-secondary-reversed-transparent": "var(--png-color_active-secondary-reversed-transparent)",
+      "active-brand-reversed-transparent": "var(--png-color_active-brand-reversed-transparent)",
+      shadow: "var(--png-color_shadow)",
     },
+    // spacing: {
+    //   0: "var(--png-spacing_0)",
+    //   1: "var(--png-spacing_1)",
+    //   2: "var(--png-spacing_2)",
+    //   3: "var(--png-spacing_3)",
+    //   4: "var(--png-spacing_4)",
+    //   5: "var(--png-spacing_5)",
+    //   6: "var(--png-spacing_6)",
+    //   7: "var(--png-spacing_7)",
+    //   8: "var(--png-spacing_8)",
+    //   9: "var(--png-spacing_9)",
+    //   10: "var(--png-spacing_10)",
+    // },
     fontFamily: {
-      primary: ['Metropolis', ...fallbackFontStack],
-      secondary: ['Archivo Narrow', 'Metropolis', ...fallbackFontStack],
-    },
-    fontWeight: {
-      // Commenting out anything Tailwind provides by default but we don’t use for this project.
-      // thin: 100,
-      // extralight: 200,
-      light: 300,
-      normal: 400,
-      medium: 500,
-      semibold: 600,
-      bold: 700,
-      extrabold: 800,
-      // black: 900,
-    },
-    fontSize: {
-      // These go to eleven. Avoid using single font sizes directly,
-      // instead use component classes that combine the appropriate desktop and mobile font sizes.
-      '11xl': '6.25rem', // 100px
-      '10xl': '4.5rem', // 72px
-      '9xl': '3.5rem', // 56px
-      '8xl': '2.75rem', // 44px
-      '7xl': '2.5rem', // 40px
-      '6xl': '2rem', // 32px
-      '5xl': '1.75rem', // 28px
-      '4xl': '1.625rem', // 26px
-      '3xl': '1.5rem', // 24px
-      '2xl': '1.375rem', // 22px
-      xl: '1.25rem', // 20px
-      lg: '1.125rem', // 18px
-      base: '1rem', // 16px
-      sm: '0.875rem', // 14px
-      xs: '0.75rem', // 12px
-    },
-    lineHeight: {
-      // Basic set of line heights. Major text styles tend to have their custom line height.
-      none: '1',
-      tighter: '1.125',
-      tight: '1.25',
-      // snug: '1.375',
-      normal: '1.5',
-      relaxed: '1.75', // Default Tailwind is 1.625.
-      // loose: '2',
-    },
-    letterSpacing: {
-      tightest: '-2px',
-      tighter: '-1px',
-      tight: '-0.5px',
-      normal: '0',
-      // wide: '0.5px',
-      wider: '1px',
-      // widest: '2px',
+      regular: ["Roboto", ...fallbackFontStack],
+      condensed: ["Roboto Condensed", ...fallbackFontStack],
+      display: ["Roboto Condensed", ...fallbackFontStack],
+      body: ["Roboto", ...fallbackFontStack],
     },
     scale: {
-      0: '0',
-      50: '.5',
-      75: '.75',
-      90: '.9',
-      95: '.95',
-      100: '1',
-      103: '1.03', // custom
-      105: '1.05',
-      110: '1.1',
-      125: '1.25',
-      150: '1.5',
+      0: "0",
+      50: ".5",
+      75: ".75",
+      90: ".9",
+      95: ".95",
+      100: "1",
+      105: "1.05",
+      110: "1.1",
+      125: "1.25",
+      150: "1.5",
     },
     checkbox: {
-      display: 'inline-block',
-      verticalAlign: 'top',
+      display: "inline-block",
+      verticalAlign: "top",
       flexShrink: 0,
-      // borderColor: grayScale['gray-dark'],
       borderWidth: 0,
       borderRadius: 0,
     },
-    extend: {
-      animation: {
-        fadeIn: 'fadeIn 500ms ease-in forwards',
-        fadeOut: 'fadeOut 500ms ease-out forwards',
-        fadeInSlow: 'fadeIn 1000ms ease-in forwards',
-        fadeOutSlow: 'fadeOut 1000ms ease-out forwards',
-        scaleIn: 'scaleIn 300ms ease-in forwards',
-        rotate: 'rotate 1s linear infinite',
+  },
+  extend: {
+    borderRadius: {
+      100: "var(--png-radius_100)",
+      200: "var(--png-radius_200)",
+      300: "var(--png-radius_300)",
+      400: "var(--png-radius_400)",
+      500: "var(--png-radius_500)",
+      600: "var(--png-radius_600)",
+      700: "var(--png-radius_700)",
+      800: "var(--png-radius_800)",
+    },
+    boxShadow: {
+      100: "var(--png-shadow_100)",
+      200: "var(--png-shadow_200)",
+      300: "var(--png-shadow_300)",
+      400: "var(--png-shadow_400)",
+    },
+    animation: {
+      fadeIn: "fadeIn 500ms ease-in forwards",
+      fadeOut: "fadeOut 500ms ease-out forwards",
+      fadeInSlow: "fadeIn 1000ms ease-in forwards",
+      fadeOutSlow: "fadeOut 1000ms ease-out forwards",
+      scaleIn: "scaleIn 300ms ease-in forwards",
+      rotate: "rotate 1s linear infinite",
+    },
+    keyframes: {
+      fadeIn: {
+        "0%": { opacity: 0 },
+        "100%": { opacity: 1 },
       },
-      keyframes: {
-        fadeIn: {
-          '0%': { opacity: 0 },
-          '100%': { opacity: 1 },
-        },
-        fadeOut: {
-          '100%': { opacity: 1 },
-          '0%': { opacity: 0 },
-        },
-        scaleIn: {
-          '0%': { transform: 'scale(0)' },
-          '100%': { transform: 'scale(1)' },
-        },
-        rotate: {
-          '100%': { transform: 'rotate(360deg)' },
-        },
+      fadeOut: {
+        "100%": { opacity: 1 },
+        "0%": { opacity: 0 },
       },
-      minHeight: {
-        none: 'none',
-        '1/4': '25%',
-        '1/2': '50%',
-        18: '4.5rem',
-        28: '7rem',
-        66: '16rem',
-        100: '25rem',
+      scaleIn: {
+        "0%": { transform: "scale(0)" },
+        "100%": { transform: "scale(1)" },
       },
-      opacity: {
-        15: '0.15',
-        30: '0.30',
-        40: '0.40',
-        90: '0.90',
-        98: '0.98',
+      rotate: {
+        "100%": { transform: "rotate(360deg)" },
       },
-      spacing: {
-        '2px': '2px',
-        14: '3.5rem',
-        14.5: '3.625rem',
-        18: '4.5rem',
-        22: '5.5rem',
-        25: '6.25rem',
-        26: '6.5rem',
-        28: '7rem',
-        29: '7.25rem',
-        30: '7.5rem',
-        35: '8.75rem',
-        36: '9rem',
-        38: '9.5rem',
-        40: '10rem',
-        72: '17.5rem',
-        80: '20rem',
-        xl: '36rem',
-        '2xl': '42rem',
-        '3xl': '48rem',
-        '4xl': '56rem',
-      },
-      transitionDuration: {
-        2000: '2000ms',
-        2500: '2500ms',
-        3000: '3000ms',
-        3500: '3500ms',
-        5000: '5000ms',
-      },
+    },
+    minHeight: {
+      none: "none",
+      "1/4": "25%",
+      "1/2": "50%",
+      18: "4.5rem",
+      28: "7rem",
+      66: "16rem",
+      100: "25rem",
+    },
+    opacity: {
+      15: "0.15",
+      30: "0.30",
+      40: "0.40",
+      90: "0.90",
+      98: "0.98",
+    },
+    transitionDuration: {
+      2000: "2000ms",
+      2500: "2500ms",
+      3000: "3000ms",
+      3500: "3500ms",
+      5000: "5000ms",
     },
   },
   variants: {
-    textColor: ['responsive', 'hover', 'focus', 'group-hover'],
-    textDecoration: ['responsive', 'hover', 'focus', 'group-hover'],
-    textOpacity: ['hover', 'group-hover'],
-    backgroundColor: ['responsive', 'hover', 'focus', 'group-hover'],
-    transformOrigin: ['responsive', 'hover'],
-    translate: ['responsive', 'hover', 'focus', 'group-hover'],
-    transitionDelay: ['responsive', 'group-hover'],
-    opacity: ['responsive', 'hover', 'focus', 'group-hover'],
-    scale: ['responsive', 'hover', 'focus', 'group-hover'],
-    margin: ['responsive', 'group-hover'],
-    borderWidth: ['responsive', 'hover', 'focus', 'group-hover'],
-    borderColor: ['responsive', 'hover', 'focus', 'group-hover'],
-    animation: ['responsive', 'motion-safe', 'motion-reduce'],
+    textColor: ["responsive", "hover", "focus", "group-hover"],
+    textDecoration: ["responsive", "hover", "focus", "group-hover"],
+    textOpacity: ["hover", "group-hover"],
+    backgroundColor: ["responsive", "hover", "focus", "group-hover"],
+    transformOrigin: ["responsive", "hover"],
+    translate: ["responsive", "hover", "focus", "group-hover"],
+    transitionDelay: ["responsive", "group-hover"],
+    opacity: ["responsive", "hover", "focus", "group-hover"],
+    scale: ["responsive", "hover", "focus", "group-hover"],
+    margin: ["responsive", "group-hover"],
+    borderWidth: ["responsive", "hover", "focus", "group-hover"],
+    borderColor: ["responsive", "hover", "focus", "group-hover"],
+    animation: ["responsive", "motion-safe", "motion-reduce"],
   },
-  plugins: [require('@tailwindcss/forms')],
-  // future: {
-  //   removeDeprecatedGapUtilities: true,
-  //   purgeLayersByDefault: true,
-  //   defaultLineHeights: true,
-  //   standardFontWeights: true,
-  // },
-}
+  plugins: [require("@tailwindcss/forms")],
+};

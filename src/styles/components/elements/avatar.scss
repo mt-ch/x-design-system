@@ -1,0 +1,19 @@
+.png-avatar {
+  @apply inline-block rounded-md;
+
+  &.-size-small {
+    @apply h-8 w-8;
+  }
+
+  &.-size-medium {
+    @apply h-10 w-10;
+  }
+
+  &.-size-large {
+    @apply h-12 w-12;
+  }
+
+  &.-rounded {
+    @apply rounded-full;
+  }
+}

@@ -1,0 +1,8 @@
+:root {
+  --png-shadow_100: rem(0) rem(6px) rem(6px) rem(0) var(--png-color_shadow);
+  --png-shadow_200: rem(0) rem(12px) rem(12px) rem(0) var(--png-color_shadow);
+  --png-shadow_300: rem(0) rem(24px) rem(24px) rem(0) var(--png-color_shadow);
+  --png-shadow_400: rem(0) rem(48px) rem(48px) rem(0) var(--png-color_shadow);
+  --png-shadow_focus-visible: 0 0 0 rem(4px) var(--png-color_border-secondary),
+    0 0 0 rem(6px) var(--png-color_border-primary-reversed);
+}

@@ -1,0 +1,12 @@
+:root {
+    --png-layout-gutter_mobile: rem(12px);
+    --png-layout-gutter_tablet: rem(16px);
+    --png-layout-gutter_small-desktop: rem(16px);
+    --png-layout-gutter_medium-desktop: rem(24px);
+    --png-layout-gutter_large-desktop: rem(32px);
+    --png-layout-margin_mobile: rem(20px);
+    --png-layout-margin_tablet: rem(24px);
+    --png-layout-margin_small-desktop: rem(40px);
+    --png-layout-margin_medium-desktop: rem(80px);
+    --png-layout-margin_large-desktop: rem(160px);
+  }

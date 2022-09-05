@@ -1,0 +1,68 @@
+:root {
+    /* Background */
+    --png-color_background-primary: #8B5CF6;
+    --png-color_background-secondary: #0369A1;
+    --png-color_background-brand-primary: hsl(var(--png-color_background-brand-primary--h), var(--png-color_background-brand-primary--s), var(--png-color_background-brand-primary--l));
+    --png-color_background-brand-secondary: hsl(var(--png-color_background-brand-secondary--h), var(--png-color_background-brand-secondary--s), var(--png-color_background-brand-secondary--l));
+    --png-color_background-danger: hsl(var(--png-color_background-alert--h), var(--png-color_background-alert--s), var(--png-color_background-alert--l));
+    --png-color_background-info: hsl(var(--png-color_background-alert--h), var(--png-color_background-alert--s), var(--png-color_background-alert--l));
+    --png-color_warning: #EAB308;
+    --png-color_warning-light: #FEF08A;
+    --png-color_warning-dark: #CA8A04;
+    --png-color_background-success: hsl(var(--png-color_background-alert--h), var(--png-color_background-alert--s), var(--png-color_background-alert--l));
+    /* Content */
+    --png-color_content-primary: hsl(var(--png-color_content-primary--h), var(--png-color_content-primary--s), var(--png-color_content-primary--l));
+    --png-color_content-secondary: hsl(var(--png-color_content-secondary--h), var(--png-color_content-secondary--s), var(--png-color_content-secondary--l));
+    --png-color_content-tertiary: hsl(var(--png-color_content-tertiary--h), var(--png-color_content-tertiary--s), var(--png-color_content-tertiary--l));
+    --png-color_content-action: hsl(var(--png-color_content-action--h), var(--png-color_content-action--s), var(--png-color_content-action--l));
+    --png-color_content-active: hsl(var(--png-color_content-active--h), var(--png-color_content-active--s), var(--png-color_content-active--l));
+    --png-color_content-inactive: hsl(var(--png-color_content-inactive--h), var(--png-color_content-inactive--s), var(--png-color_content-inactive--l));
+    --png-color_content-negative: hsl(var(--png-color_content-negative--h), var(--png-color_content-negative--s), var(--png-color_content-negative--l));
+    --png-color_content-warning: hsl(var(--png-color_content-warning--h), var(--png-color_content-warning--s), var(--png-color_content-warning--l));
+    --png-color_content-positive: hsl(var(--png-color_content-positive--h), var(--png-color_content-positive--s), var(--png-color_content-positive--l));
+    --png-color_content-information: hsl(var(--png-color_content-information--h), var(--png-color_content-information--s), var(--png-color_content-information--l));
+    --png-color_content-accent: hsl(var(--png-color_content-accent--h), var(--png-color_content-accent--s), var(--png-color_content-accent--l));
+    --png-color_content-visited: hsl(var(--png-color_content-visited--h), var(--png-color_content-visited--s), var(--png-color_content-visited--l));
+    --png-color_content-primary-reversed: hsl(var(--png-color_content-primary-reversed--h), var(--png-color_content-primary-reversed--s), var(--png-color_content-primary-reversed--l));
+    --png-color_content-action-reversed: hsl(var(--png-color_content-action-reversed--h), var(--png-color_content-action-reversed--s), var(--png-color_content-action-reversed--l));
+    --png-color_content-visited-reversed: hsl(var(--png-color_content-visited-reversed--h), var(--png-color_content-visited-reversed--s), var(--png-color_content-visited-reversed--l));
+    /* Border */
+    --png-color_border-primary: hsl(var(--png-color_border-primary--h), var(--png-color_border-primary--s), var(--png-color_border-primary--l));
+    --png-color_border-secondary: hsl(var(--png-color_border-secondary--h), var(--png-color_border-secondary--s), var(--png-color_border-secondary--l));
+    --png-color_border-tertiary: hsl(var(--png-color_border-tertiary--h), var(--png-color_border-tertiary--s), var(--png-color_border-tertiary--l));
+    --png-color_border-active: hsl(var(--png-color_border-active--h), var(--png-color_border-active--s), var(--png-color_border-active--l));
+    --png-color_border-inactive: hsl(var(--png-color_border-inactive--h), var(--png-color_border-inactive--s), var(--png-color_border-inactive--l));
+    --png-color_border-negative: hsl(var(--png-color_border-negative--h), var(--png-color_border-negative--s), var(--png-color_border-negative--l));
+    --png-color_border-warning: #EAB308;
+    --png-color_border-positive: hsl(var(--png-color_border-positive--h), var(--png-color_border-positive--s), var(--png-color_border-positive--l));
+    --png-color_border-information: hsl(var(--png-color_border-information--h), var(--png-color_border-information--s), var(--png-color_border-information--l));
+    --png-color_border-primary-reversed: hsl(var(--png-color_border-primary-reversed--h), var(--png-color_border-primary-reversed--s), var(--png-color_border-primary-reversed--l));
+    /* Hover */
+    --png-color_hover-primary: #6D28D9;
+    --png-color_hover-secondary: #0C4A6E;
+    /* Hover (Auto-generated) */
+    --png-color_hover-primary-transparent: hsla(var(--png-color_hover-primary-transparent--h), var(--png-color_hover-primary-transparent--s), var(--png-color_hover-primary-transparent--l), 0.05);
+    --png-color_hover-secondary-transparent: hsla(var(--png-color_hover-secondary-transparent--h), var(--png-color_hover-secondary-transparent--s), var(--png-color_hover-secondary-transparent--l), 0.05);
+    --png-color_hover-tertiary-transparent: hsla(var(--png-color_hover-tertiary-transparent--h), var(--png-color_hover-tertiary-transparent--s), var(--png-color_hover-tertiary-transparent--l), 0.8);
+    --png-color_hover-tertiary: hsla(var(--png-color_hover-tertiary--h), var(--png-color_hover-tertiary--s), var(--png-color_hover-tertiary--l), 1);
+    --png-color_hover-brand: hsla(var(--png-color_hover-brand--h), var(--png-color_hover-brand--s), var(--png-color_hover-brand--l), 1);
+    --png-color_hover-accent: hsla(var(--png-color_hover-accent--h), var(--png-color_hover-accent--s), var(--png-color_hover-accent--l), 1);
+    --png-color_hover-primary-reversed-transparent: hsla(var(--png-color_hover-primary-reversed-transparent--h), var(--png-color_hover-primary-reversed-transparent--s), var(--png-color_hover-primary-reversed-transparent--l), 0.08);
+    --png-color_hover-secondary-reversed-transparent: hsla(var(--png-color_hover-secondary-reversed-transparent--h), var(--png-color_hover-secondary-reversed-transparent--s), var(--png-color_hover-secondary-reversed-transparent--l), 0.02);
+    --png-color_hover-tertiary-reversed-transparent: hsla(var(--png-color_hover-tertiary-reversed-transparent--h), var(--png-color_hover-tertiary-reversed-transparent--s), var(--png-color_hover-tertiary-reversed-transparent--l), 0.8);
+    /* Active */
+    /* Active (Auto-generated) */
+    --png-color_active-primary: hsla(var(--png-color_active-primary--h), var(--png-color_active-primary--s), var(--png-color_active-primary--l), 1);
+    --png-color_active-primary-transparent: hsla(var(--png-color_active-primary-transparent--h), var(--png-color_active-primary-transparent--s), var(--png-color_active-primary-transparent--l), 0.15);
+    --png-color_active-secondary-transparent: hsla(var(--png-color_active-secondary-transparent--h), var(--png-color_active-secondary-transparent--s), var(--png-color_active-secondary-transparent--l), 0.15);
+    --png-color_active-tertiary: hsla(var(--png-color_active-tertiary--h), var(--png-color_active-tertiary--s), var(--png-color_active-tertiary--l), 1);
+    --png-color_active-tertiary-transparent: hsla(var(--png-color_active-tertiary-transparent--h), var(--png-color_active-tertiary-transparent--s), var(--png-color_active-tertiary-transparent--l), 0.8);
+    --png-color_active-brand: hsla(var(--png-color_active-brand--h), var(--png-color_active-brand--s), var(--png-color_active-brand--l), 1);
+    --png-color_active-accent: hsla(var(--png-color_active-accent--h), var(--png-color_active-accent--s), var(--png-color_active-accent--l), 1);
+    --png-color_active-primary-reversed-transparent: hsla(var(--png-color_active-primary-reversed-transparent--h), var(--png-color_active-primary-reversed-transparent--s), var(--png-color_active-primary-reversed-transparent--l), 0.25);
+    --png-color_active-secondary-reversed-transparent: hsla(var(--png-color_active-secondary-reversed-transparent--h), var(--png-color_active-secondary-reversed-transparent--s), var(--png-color_active-secondary-reversed-transparent--l), 0.4);
+    --png-color_active-tertiary-reversed-transparent: hsla(var(--png-color_active-tertiary-reversed-transparent--h), var(--png-color_active-tertiary-reversed-transparent--s), var(--png-color_active-tertiary-reversed-transparent--l), 0.8);
+    --png-color_active-brand-reversed-transparent: hsla(var(--png-color_active-brand-reversed-transparent--h), var(--png-color_active-brand-reversed-transparent--s), var(--png-color_active-brand-reversed-transparent--l), 0.6);
+    /* Shadow */
+    --png-color_shadow: hsla(var(--png-color_shadow--h), var(--png-color_shadow--s), var(--png-color_shadow--l), 0.1);
+  }

@@ -1,0 +1,104 @@
+:root {
+  --png-text_font-family: "Roboto", "system-ui", "-apple-system", sans-serif;
+  --png-text_font-family--condensed: "Roboto Condensed", "system-ui", "-apple-system", sans-serif;
+  --png-text_font-weight--normal: 400;
+  --png-text_font-weight--bold: 700;
+  --png-text_display-1-font-size: rem(60px);
+  --png-text_display-2-font-size: rem(42px);
+  --png-text_title-1-font-size: rem(40px);
+  --png-text_title-2-font-size: rem(36px);
+  --png-text_title-3-font-size: rem(28px);
+  --png-text_title-4-font-size: rem(24px);
+  --png-text_title-5-font-size: rem(20px);
+  --png-text_text-1-font-size: rem(18px);
+  --png-text_text-2-font-size: rem(16px);
+  --png-text_text-3-font-size: rem(14px);
+  --png-text_caption-1-font-size: rem(12px);
+  --png-text_display-1-line-height: 1;
+  --png-text_display-2-line-height: 1.04;
+  --png-text_title-1-line-height: 1.1;
+  --png-text_title-2-line-height: 1.11;
+  --png-text_title-3-line-height: 1.14;
+  --png-text_title-4-line-height: 1.16;
+  --png-text_title-5-line-height: 1.2;
+  --png-text_text-1-line-height: 1.55;
+  --png-text_text-2-line-height: 1.5;
+  --png-text_text-3-line-height: 1.42;
+  --png-text_caption-1-line-height: 1.34;
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  :root {
+    --png-text_display-1-font-size: rem(76px);
+    --png-text_display-2-font-size: rem(48px);
+    --png-text_title-1-font-size: rem(44px);
+    --png-text_title-2-font-size: rem(38px);
+    --png-text_title-3-font-size: rem(30px);
+    --png-text_title-4-font-size: rem(24px);
+    --png-text_title-5-font-size: rem(20px);
+    --png-text_display-1-line-height: 1;
+    --png-text_display-2-line-height: 1.08;
+    --png-text_title-1-line-height: 1.09;
+    --png-text_title-2-line-height: 1.15;
+    --png-text_title-3-line-height: 1.2;
+    --png-text_title-4-line-height: 1.16;
+    --png-text_title-5-line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+  :root {
+    --png-text_display-1-font-size: rem(76px);
+    --png-text_display-2-font-size: rem(48px);
+    --png-text_title-1-font-size: rem(44px);
+    --png-text_title-2-font-size: rem(38px);
+    --png-text_title-3-font-size: rem(30px);
+    --png-text_title-4-font-size: rem(24px);
+    --png-text_title-5-font-size: rem(20px);
+    --png-text_display-1-line-height: 1;
+    --png-text_display-2-line-height: 1.06;
+    --png-text_title-1-line-height: 1.08;
+    --png-text_title-2-line-height: 1.1;
+    --png-text_title-3-line-height: 1.12;
+    --png-text_title-4-line-height: 1.23;
+    --png-text_title-5-line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1799px) {
+  :root {
+    --png-text_display-1-font-size: rem(96px);
+    --png-text_display-2-font-size: rem(60px);
+    --png-text_title-1-font-size: rem(48px);
+    --png-text_title-2-font-size: rem(40px);
+    --png-text_title-3-font-size: rem(32px);
+    --png-text_title-4-font-size: rem(26px);
+    --png-text_title-5-font-size: rem(20px);
+    --png-text_display-1-line-height: 1;
+    --png-text_display-2-line-height: 1.06;
+    --png-text_title-1-line-height: 1.08;
+    --png-text_title-2-line-height: 1.1;
+    --png-text_title-3-line-height: 1.12;
+    --png-text_title-4-line-height: 1.23;
+    --png-text_title-5-line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  :root {
+    --png-text_display-1-font-size: rem(96px);
+    --png-text_display-2-font-size: rem(60px);
+    --png-text_title-1-font-size: rem(48px);
+    --png-text_title-2-font-size: rem(40px);
+    --png-text_title-3-font-size: rem(32px);
+    --png-text_title-4-font-size: rem(26px);
+    --png-text_title-5-font-size: rem(20px);
+    --png-text_display-1-line-height: 1;
+    --png-text_display-2-line-height: 1.06;
+    --png-text_title-1-line-height: 1.08;
+    --png-text_title-2-line-height: 1.1;
+    --png-text_title-3-line-height: 1.12;
+    --png-text_title-4-line-height: 1.23;
+    --png-text_title-5-line-height: 1.2;
+  }
+}

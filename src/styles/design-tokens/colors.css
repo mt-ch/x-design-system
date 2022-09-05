@@ -1,0 +1,14 @@
+:root {
+  --png-base-color_white: hsl(var(--png-base-color_white--h), var(--png-base-color_white--s), var(--png-base-color_white--l));
+  --png-base-color_grey50: hsl(var(--png-base-color_grey50--h), var(--png-base-color_grey50--s), var(--png-base-color_grey50--l));
+  --png-base-color_grey100: hsl(var(--png-base-color_grey100--h), var(--png-base-color_grey100--s), var(--png-base-color_grey100--l));
+  --png-base-color_grey200: hsl(var(--png-base-color_grey200--h), var(--png-base-color_grey200--s), var(--png-base-color_grey200--l));
+  --png-base-color_grey300: hsl(var(--png-base-color_grey300--h), var(--png-base-color_grey300--s), var(--png-base-color_grey300--l));
+  --png-base-color_grey400: hsl(var(--png-base-color_grey400--h), var(--png-base-color_grey400--s), var(--png-base-color_grey400--l));
+  --png-base-color_grey500: hsl(var(--png-base-color_grey500--h), var(--png-base-color_grey500--s), var(--png-base-color_grey500--l));
+  --png-base-color_grey600: hsl(var(--png-base-color_grey600--h), var(--png-base-color_grey600--s), var(--png-base-color_grey600--l));
+  --png-base-color_grey700: hsl(var(--png-base-color_grey700--h), var(--png-base-color_grey700--s), var(--png-base-color_grey700--l));
+  --png-base-color_grey800: hsl(var(--png-base-color_grey800--h), var(--png-base-color_grey800--s), var(--png-base-color_grey800--l));
+  --png-base-color_grey900: hsl(var(--png-base-color_grey900--h), var(--png-base-color_grey900--s), var(--png-base-color_grey900--l));
+  --png-base-color_black: hsl(var(--png-base-color_black--h), var(--png-base-color_black--s), var(--png-base-color_black--l));
+}

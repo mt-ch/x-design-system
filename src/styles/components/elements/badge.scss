@@ -1,0 +1,32 @@
+.png-badge {
+    @apply inline-flex items-center rounded font-medium;
+   
+    &.-size-small {
+      @apply px-2.5 py-0.5 text-xs;
+    }
+
+    &.-size-large {
+      @apply px-3 py-0.5 text-sm;
+    }
+  
+    &.-variant-primary {
+      @apply bg-background-primary text-white;
+    }
+  
+    &.-variant-secondary {
+      @apply bg-background-secondary text-white;
+    }
+  
+    &.-variant-light {
+      @apply text-gray-dark bg-gray-light;
+    }
+  
+    &.-variant-dark {
+      @apply bg-gray-dark text-white;
+    }
+  
+    &.-rounded {
+      @apply rounded-full;
+    }
+  }
+  

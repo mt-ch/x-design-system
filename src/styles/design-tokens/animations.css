@@ -1,0 +1,156 @@
+
+:root {
+    --png-animation_alert: fade-in 200ms ease-in forwards,
+      slide-left 0.2s ease-in forwards, slide-right 0.2s 7.5s ease-in forwards;
+    --png-animation_alert-mobile: fade_in 200ms ease-in forwards,
+      slide-up 0.2s ease-in forwards, slide-down 0.2s 7.5s ease-in forwards;
+    --png-animation_fade-in: fade-in 200ms ease-in-out forwards;
+    --png-animation_show-up: show-up 400ms ease-in-out forwards;
+    --png-animation_overlay: fade-in 0.5s ease-in-out forwards,
+      show-up 0.5s ease-in-out forwards, fade-out 0.5s 4.5s ease-in-out forwards,
+      vanish 0.5s 4.5s ease-in-out forwards;
+    --png-animation_linear-indeterminate: 1.5s ease-in-out infinite
+      linear-indeterminate;
+    --png-animation_circle-indeterminate: 4s linear infinite circle-indeterminate;
+    --png-animation_circle-indeterminate-small: 4s linear infinite
+      circle-indeterminate-small;
+    --png-animation_shimmer: shimmer 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-left {
+    from {
+      transform: translateX(120%);
+    }
+  
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slide-right {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(120%);
+    }
+  }
+  
+  @keyframes slide-down {
+    from {
+      transform: translateY(0);
+    }
+  
+    to {
+      transform: translateY(120%);
+    }
+  }
+  
+  @keyframes slide-up {
+    from {
+      transform: translateY(120%);
+    }
+  
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes show-up {
+    from {
+      bottom: 0;
+    }
+  
+    to {
+      bottom: 15px;
+    }
+  }
+  
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes vanish {
+    from {
+      bottom: 15px;
+    }
+  
+    to {
+      bottom: 0;
+    }
+  }
+  
+  @keyframes linear-indeterminate {
+    0% {
+      transform: translateX(-100%);
+    }
+  
+    60% {
+      transform: translateX(105%);
+    }
+  
+    100% {
+      transform: translateX(105%);
+    }
+  }
+  
+  @keyframes circle-indeterminate {
+    0% {
+      stroke-dashoffset: 400;
+      transform: rotate(-0.25turn);
+    }
+  
+    50% {
+      transform: rotate(0.75turn);
+      stroke-dashoffset: 0;
+    }
+  
+    100% {
+      stroke-dashoffset: 400;
+      transform: rotate(2.75turn);
+    }
+  }
+  
+  @keyframes circle-indeterminate-small {
+    0% {
+      stroke-dashoffset: 200;
+      transform: rotate(-0.25turn);
+    }
+  
+    50% {
+      transform: rotate(0.75turn);
+      stroke-dashoffset: 0;
+    }
+  
+    100% {
+      stroke-dashoffset: 200;
+      transform: rotate(2.75turn);
+    }
+  }
+  
+  @keyframes shimmer {
+    from {
+      transform: translateX(-100%);
+    }
+  
+    to {
+      transform: translateX(100%);
+    }
+  }

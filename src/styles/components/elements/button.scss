@@ -1,0 +1,65 @@
+.png-btn {
+  @apply inline-flex items-center border border-transparent font-medium rounded shadow-sm cursor-pointer transition-all duration-200 ease-linear;
+
+  > .label {
+    @apply flex items-center justify-center;
+  }
+
+  &:focus {
+    @apply outline-none ring-2 ring-offset-2;
+  }
+
+  &.-size-small {
+    @apply px-3 py-2 text-sm;
+  }
+
+  &.-size-medium {
+    @apply px-4 py-2 text-sm;
+  }
+
+  &.-size-large {
+    @apply px-4 py-2 text-base;
+  }
+
+  &.-variant-primary {
+    @apply bg-background-primary text-white hover:bg-hover-primary;
+
+    &:focus {
+      @apply ring-background-primary;
+    }
+  }
+
+  &.-variant-secondary {
+    @apply bg-background-secondary text-white hover:bg-hover-secondary;
+
+    &:focus {
+      @apply ring-background-secondary;
+    }
+  }
+
+  &.-variant-light {
+    @apply bg-white text-gray-dark border-gray-light-mid hover:bg-gray-light;
+
+    &:focus {
+      @apply ring-background-primary;
+    }
+  }
+
+  &.-variant-dark {
+    @apply bg-gray-dark text-white hover:bg-black;
+
+    &:focus {
+      @apply ring-gray-dark;
+    }
+  }
+
+  &:disabled {
+    @apply pointer-events-none;
+    cursor: not-allowed;
+    opacity: var(--png-opacity_disabled-state);
+  }
+
+  &.-rounded {
+    @apply rounded-full;
+  }
+}

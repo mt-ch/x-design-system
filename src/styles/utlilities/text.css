@@ -1,0 +1,91 @@
+/* @import '@vtmn/css-design-tokens/src/base-colors';
+@import '@vtmn/css-design-tokens/src/themes/default';
+@import '@vtmn/css-design-tokens/src/typography'; */
+
+.vtmn-typo_display-1 {
+  font-family: var(--png-typo_font-family--condensed);
+  color: var(--png-color_content-primary);
+  font-weight: var(--png-typo_font-weight--bold);
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: var(--png-typo_display-1-font-size);
+  line-height: var(--png-typo_display-1-line-height);
+}
+
+.vtmn-typo_display-2 {
+  font-family: var(--png-typo_font-family--condensed);
+  color: var(--png-color_content-primary);
+  font-weight: var(--png-typo_font-weight--bold);
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: var(--png-typo_display-2-font-size);
+  line-height: var(--png-typo_display-2-line-height);
+}
+
+.vtmn-typo_title-1 {
+  font-family: var(--png-typo_font-family);
+  color: var(--png-color_content-primary);
+  font-weight: var(--png-typo_font-weight--bold);
+  font-size: var(--png-typo_title-1-font-size);
+  line-height: var(--png-typo_title-1-line-height);
+}
+
+.vtmn-typo_title-2 {
+  font-family: var(--png-typo_font-family);
+  color: var(--png-color_content-primary);
+  font-weight: var(--png-typo_font-weight--bold);
+  font-size: var(--png-typo_title-2-font-size);
+  line-height: var(--png-typo_title-2-line-height);
+}
+
+.vtmn-typo_title-3 {
+  font-family: var(--png-typo_font-family);
+  color: var(--png-color_content-primary);
+  font-weight: var(--png-typo_font-weight--bold);
+  font-size: var(--png-typo_title-3-font-size);
+  line-height: var(--png-typo_title-3-line-height);
+}
+
+.vtmn-typo_title-4 {
+  font-family: var(--png-typo_font-family);
+  color: var(--png-color_content-primary);
+  font-weight: var(--png-typo_font-weight--bold);
+  font-size: var(--png-typo_title-4-font-size);
+  line-height: var(--png-typo_title-4-line-height);
+}
+
+.vtmn-typo_title-5 {
+  font-family: var(--png-typo_font-family);
+  color: var(--png-color_content-primary);
+  font-weight: var(--png-typo_font-weight--bold);
+  font-size: var(--png-typo_title-5-font-size);
+  line-height: var(--png-typo_title-5-line-height);
+}
+
+.vtmn-typo_text-1 {
+  font-family: var(--png-typo_font-family);
+  color: var(--png-color_content-primary);
+  font-size: var(--png-typo_text-1-font-size);
+  line-height: var(--png-typo_text-1-line-height);
+}
+
+.vtmn-typo_text-2 {
+  font-family: var(--png-typo_font-family);
+  color: var(--png-color_content-primary);
+  font-size: var(--png-typo_text-2-font-size);
+  line-height: var(--png-typo_text-2-line-height);
+}
+
+.vtmn-typo_text-3 {
+  font-family: var(--png-typo_font-family);
+  color: var(--png-color_content-primary);
+  font-size: var(--png-typo_text-3-font-size);
+  line-height: var(--png-typo_text-3-line-height);
+}
+
+.vtmn-typo_caption-1 {
+  font-family: var(--png-typo_font-family);
+  color: var(--png-color_content-primary);
+  font-size: var(--png-typo_caption-1-font-size);
+  line-height: var(--png-typo_caption-1-line-height);
+}
