@@ -12,7 +12,7 @@
       },
       size: {
         type: String,
-        default: "large",
+        default: "medium",
       },
       label: {
         type: String as PropType<string>,

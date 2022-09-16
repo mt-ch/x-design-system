@@ -1,40 +1,25 @@
-import Toggle from "../../../../components/forms/toggle.vue";
+import Toggle from "../../../components/forms/toggle.vue";
 
 export default {
   title: "Components/Forms/Toggle",
   component: Toggle,
-//   argTypes: {
-//     label: {
-//       type: "string",
-//     },
-//     variant: {
-//       type: "string",
-//       description: "Badge color type",
-//       control: {
-//         type: "select",
-//         options: ["primary", "secondary", "light", "dark"],
-//       },
-//       table: {
-//         defaultValue: { summary: "default" },
-//       },
-//     },
-//     size: {
-//       control: { type: "select" },
-//       options: ["small", "large"],
-//       table: {
-//         defaultValue: { summary: "default" },
-//       },
-//     },
-//     rounded: {
-//       type: "boolean",
-//       control: {
-//         type: "boolean",
-//       },
-//       table: {
-//         defaultValue: { summary: "false" },
-//       },
-//     },
-//   },
+  argTypes: {
+    checked: {
+      type: "boolean",
+      control: {
+        type: "boolean",
+      },
+      table: {
+        defaultValue: { summary: "false" },
+      },
+    },
+    label: {
+      type: "string",
+    },
+    description: {
+      type: "string",
+    },
+  },
 };
 
 const Template = (args) => ({
@@ -45,50 +30,30 @@ const Template = (args) => ({
   template: '<Toggle v-bind="args" />',
 });
 
-// export const Primary = Template.bind({});
-// Primary.args = {
-//     // label: 'Badge',
-//     // variant: 'primary',
-//     // size: 'large',
-//     // rounded: false,
-// };
+export const Default = Template.bind({});
+Default.args = {
+  checked: false,
+  label: "",
+  description: "",
+};
 
-// export const PrimarySmall = Template.bind({});
-// PrimarySmall.args = {
-//     label: 'Badge',
-//     variant: 'primary',
-//     size: 'large',
-//     rounded: false,
-// };
+export const Enabled = Template.bind({});
+Enabled.args = {
+  checked: true,
+  label: "",
+  description: "",
+};
 
-// export const PrimaryRounded = Template.bind({});
-// PrimaryRounded.args = {
-//     label: 'Badge',
-//     variant: 'primary',
-//     size: 'large',
-//     rounded: true,
-// };
+export const WithLabel = Template.bind({});
+WithLabel.args = {
+  checked: false,
+  label: "Label",
+  description: "",
+};
 
-// export const Secondary = Template.bind({});
-// Secondary.args = {
-//     label: 'Badge',
-//     variant: 'secondary',
-//     size: 'large',
-//     rounded: false,
-// };
-
-// export const Light = Template.bind({});
-// Light.args = {
-//     label: 'Badge',
-//     variant: 'light',
-//     size: 'large',
-//     rounded: false,
-// };
-
-// export const Dark = Template.bind({});
-// Dark.args = {
-//     label: 'Badge',
-//     variant: 'dark',
-//     size: 'large',
-//     rounded: false,
-// };
+export const WithLabelAndDescription = Template.bind({});
+WithLabelAndDescription.args = {
+  checked: false,
+  label: "Label",
+  description: "Nulla amet tempus sit accumsan. Aliquet turpis sed sit lacinia.",
+};

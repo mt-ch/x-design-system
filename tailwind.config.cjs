@@ -51,11 +51,38 @@ module.exports = {
     colors: {
       ...grayScale,
       ...socialColors,
+      yellow : colors.yellow,
+      green : colors.green,
+      red: colors.red,
+      blue: colors.blue,
+      gray: colors.gray,
       transparent: "transparent",
       current: 'currentColor',
+      "primary": "var(--png-color_background-primary)",
+
+      "success": "var(--png-color_success)",
+      "success-lighter": "var(--png-color_success-lighter)",
+      "success-light": "var(--png-color_success-light)",
+      "success-dark": "var(--png-color_success-dark)",
+      "success-darker": "var(--png-color_success-darker)",
+
+      "info": "var(--png-color_info)",
+      "info-lighter": "var(--png-color_info-lighter)",
+      "info-light": "var(--png-color_info-light)",
+      "info-dark": "var(--png-color_info-dark)",
+      "info-darker": "var(--png-color_info-darker)",
+
+      "danger": "var(--png-color_danger)",
+      "danger-lighter": "var(--png-color_danger-lighter)",
+      "danger-light": "var(--png-color_danger-light)",
+      "danger-dark": "var(--png-color_danger-dark)",
+      "danger-darker": "var(--png-color_danger-darker)",
+
       "warning": "var(--png-color_warning)",
+      "warning-lighter": "var(--png-color_warning-lighter)",
       "warning-light": "var(--png-color_warning-light)",
       "warning-dark": "var(--png-color_warning-dark)",
+      "warning-darker": "var(--png-color_warning-darker)",
 
       
       "background-primary": "var(--png-color_background-primary)",

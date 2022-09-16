@@ -1,6 +1,6 @@
 :root {
-  --png-text_font-family: "Roboto", "system-ui", "-apple-system", sans-serif;
-  --png-text_font-family--condensed: "Roboto Condensed", "system-ui", "-apple-system", sans-serif;
+  --png-text_font-family: "Exo", "system-ui", "-apple-system", sans-serif;
+  --png-text_font-family--condensed: "Exo", "system-ui", "-apple-system", sans-serif;
   --png-text_font-weight--normal: 400;
   --png-text_font-weight--bold: 700;
   --png-text_display-1-font-size: rem(60px);

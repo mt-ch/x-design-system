@@ -4,12 +4,31 @@
     --png-color_background-secondary: #0369A1;
     --png-color_background-brand-primary: hsl(var(--png-color_background-brand-primary--h), var(--png-color_background-brand-primary--s), var(--png-color_background-brand-primary--l));
     --png-color_background-brand-secondary: hsl(var(--png-color_background-brand-secondary--h), var(--png-color_background-brand-secondary--s), var(--png-color_background-brand-secondary--l));
-    --png-color_background-danger: hsl(var(--png-color_background-alert--h), var(--png-color_background-alert--s), var(--png-color_background-alert--l));
-    --png-color_background-info: hsl(var(--png-color_background-alert--h), var(--png-color_background-alert--s), var(--png-color_background-alert--l));
-    --png-color_warning: #EAB308;
-    --png-color_warning-light: #FEF08A;
-    --png-color_warning-dark: #CA8A04;
-    --png-color_background-success: hsl(var(--png-color_background-alert--h), var(--png-color_background-alert--s), var(--png-color_background-alert--l));
+
+    --png-color_danger-lighter: #fef2f2;
+    --png-color_danger-light: #f87171;
+    --png-color_danger: #ef4444;
+    --png-color_danger-dark: #b91c1c;
+    --png-color_danger-darker: #991b1b;
+
+    --png-color_info-lighter: #eff6ff;
+    --png-color_info-light: #60a5fa;
+    --png-color_info: #3b82f6;
+    --png-color_info-dark: #1d4ed8;
+    --png-color_info-darker: #1e40af;
+
+    --png-color_warning-lighter: #fefce8;
+    --png-color_warning-light: #facc15;
+    --png-color_warning: #eab308;
+    --png-color_warning-dark: #a16207;
+    --png-color_warning-darker: #854d0e;
+
+    --png-color_success-lighter: #f0fdf4;
+    --png-color_success-light: #4ade80;
+    --png-color_success: #22c55e;
+    --png-color_success-dark: #15803d;
+    --png-color_success-darker: #166534;
+
     /* Content */
     --png-color_content-primary: hsl(var(--png-color_content-primary--h), var(--png-color_content-primary--s), var(--png-color_content-primary--l));
     --png-color_content-secondary: hsl(var(--png-color_content-secondary--h), var(--png-color_content-secondary--s), var(--png-color_content-secondary--l));

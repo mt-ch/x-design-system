@@ -1,0 +1,7 @@
+.png-toggle {
+    @apply relative inline-flex flex-shrink-0 h-6 w-11 cursor-pointer rounded-full border-2 border-transparent transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-light-mid focus:ring-offset-2;
+}
+
+.png-toggle-inner {
+    @apply pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out;
+}

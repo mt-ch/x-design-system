@@ -15,14 +15,14 @@ export default {
         options: ["primary", "secondary", "light", "dark"],
       },
       table: {
-        defaultValue: { summary: "default" },
+        defaultValue: { summary: "primary" },
       },
     },
     size: {
       control: { type: "select" },
-      options: ["small", "large"],
+      options: ["small", "medium"],
       table: {
-        defaultValue: { summary: "default" },
+        defaultValue: { summary: "medium" },
       },
     },
     rounded: {
@@ -49,7 +49,7 @@ export const Primary = Template.bind({});
 Primary.args = {
     label: 'Badge',
     variant: 'primary',
-    size: 'large',
+    size: 'medium',
     rounded: false,
 };
 
@@ -65,7 +65,7 @@ export const PrimaryRounded = Template.bind({});
 PrimaryRounded.args = {
     label: 'Badge',
     variant: 'primary',
-    size: 'large',
+    size: 'medium',
     rounded: true,
 };
 
@@ -73,7 +73,7 @@ export const Secondary = Template.bind({});
 Secondary.args = {
     label: 'Badge',
     variant: 'secondary',
-    size: 'large',
+    size: 'medium',
     rounded: false,
 };
 
@@ -81,7 +81,7 @@ export const Light = Template.bind({});
 Light.args = {
     label: 'Badge',
     variant: 'light',
-    size: 'large',
+    size: 'medium',
     rounded: false,
 };
 
@@ -89,6 +89,6 @@ export const Dark = Template.bind({});
 Dark.args = {
     label: 'Badge',
     variant: 'dark',
-    size: 'large',
+    size: 'medium',
     rounded: false,
 };

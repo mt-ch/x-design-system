@@ -1,89 +1,46 @@
 <script lang="ts">
   import "../../styles/index.scss";
-  import { computed, defineComponent, PropType, reactive } from "vue";
+  import { defineComponent, PropType, reactive } from "vue";
+
+  import { Switch, SwitchGroup, SwitchLabel } from "@headlessui/vue";
 
   export default defineComponent({
     name: "toggle",
+    components: { Switch, SwitchGroup, SwitchLabel },
     props: {
-      modelValue: {
-        type: Boolean as PropType<boolean>,
-        default: false,
-      },
-      identifier: {
-        type: String as PropType<string>,
-        required: true,
-      },
-      labelText: {
-        type: String as PropType<string>,
-        default: null,
-      },
       checked: {
         type: Boolean as PropType<boolean>,
         default: false,
       },
-      disabled: {
-        type: Boolean as PropType<boolean>,
-        default: false,
-      },
-      size: {
+      label: {
         type: String as PropType<string>,
-        default: "medium",
+        default: null,
+      },
+      description: {
+        type: String as PropType<string>,
+        default: null,
       },
     },
-    emits: ["update:modelValue"],
     setup(props, { emit }) {
       props = reactive(props);
-      const handleChange = (event: Event) => {
-        if (event && event.target) {
-          return emit("update:modelValue", (event.target as HTMLInputElement).checked);
-        }
-      };
-      return {
-        classes: computed(() => ({
-          "png-toggle": true,
-          [`-size-${props.size}`]: props.size,
-        })),
-        handleChange,
-      };
     },
   });
 </script>
 
 <template>
-  <button
-    type="button"
-    class="
-      bg-gray-200
-      relative
-      inline-flex
-      h-6
-      w-11
-      flex-shrink-0
-      cursor-pointer
-      rounded-full
-      border-2 border-transparent
-      transition-colors
-      duration-200
-      ease-in-out
-      focus:outline-none
-      focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2
-    "
-    role="switch"
-    aria-checked="false"
-  >
-    <span class="sr-only">Use setting</span>
-    <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
-    <span
-      aria-hidden="true"
-      class="translate-x-0 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"
-    ></span>
-  </button>
-
-  <!-- <div :class="classes">
-    <div class="vtmn-toggle_switch">
-      <input type="checkbox" :id="identifier" :checked="checked" :disabled="disabled" @change="handleChange" />
-      <span aria-hidden="true"></span>
-    </div>
-    <label :for="identifier">{{ labelText }}</label>
-  </div> -->
+  <SwitchGroup v-if="label" as="div" class="flex items-center">
+    <span v-if="label && description" class="flex flex-col mr-6">
+      <SwitchLabel class="text-sm font-medium text-gray-dark cursor-pointer">{{ label }}</SwitchLabel>
+      <SwitchDescription as="span" class="text-sm text-gray-mid-dark">{{ description }}</SwitchDescription>
+    </span>
+    <Switch v-model="checked" :class="[checked ? 'bg-primary' : 'bg-gray-light', 'png-toggle']">
+      <span aria-hidden="true" :class="[checked ? 'translate-x-5' : 'translate-x-0', 'png-toggle-inner']" />
+    </Switch>
+    <SwitchLabel v-if="label && !description" as="span" class="ml-3 cursor-pointer">
+      <span class="text-sm font-medium text-gray-dark">{{ label }}</span>
+    </SwitchLabel>
+  </SwitchGroup>
+  <Switch v-else v-model="checked" :class="[checked ? 'bg-primary' : '  bg-gray-light', 'png-toggle']">
+    <span aria-hidden="true" :class="[checked ? 'translate-x-5' : 'translate-x-0', 'png-toggle-inner']" />
+  </Switch>
 </template>

@@ -10,29 +10,28 @@ export default {
     description: {
       type: "string",
     },
-    type: {
+    variant: {
       type: "string",
       control: {
         type: "select",
-        options: ["button", "submit", "reset"],
+        options: ["success", "warning", "info", "danger"],
       },
       table: {
-        defaultValue: { summary: "button" },
+        defaultValue: { summary: "info" },
       },
     },
-    variant: {
-        type: "string",
-        control: {
-          type: "select",
-          options: ["success", "warning", "info", "primary", "danger"],
-        },
-        table: {
-          defaultValue: { summary: "info" },
-        },
+    withCloseButton: {
+      type: "boolean",
+      control: {
+        type: "boolean",
+      },
+      table: {
+        defaultValue: { summary: "false" },
+      },
     },
-    // onclose: {
-    //     type: "function"
-    // }
+    onClick: {
+      type: "function",
+    },
   },
 };
 
@@ -44,10 +43,41 @@ const Template = (args) => ({
   template: '<Alert v-bind="args" />',
 });
 
+export const Success = Template.bind({});
+Success.args = {
+  title: "Success Alert",
+  description: "I'm here to tell you something good",
+  variant: "success",
+  withCloseButton: false,
+  onClick: null,
+};
+
 export const Warning = Template.bind({});
 Warning.args = {
   title: "Warning Alert",
-  description: "I'm here to inform you about something",
-  type: "button",
+  description: "I'm here to warn you about something",
   variant: "warning",
+};
+
+export const Info = Template.bind({});
+Info.args = {
+  title: "Info Alert",
+  description: "I'm here to inform you about something",
+  variant: "info",
+};
+
+export const Danger = Template.bind({});
+Danger.args = {
+  title: "Danger Alert",
+  description: "I'm here to warn you about something dangerous",
+  variant: "danger",
+};
+
+export const WithCloseButton = Template.bind({});
+WithCloseButton.args = {
+  title: "Warning Alert",
+  description: "I'm here to warn you about something",
+  variant: "warning",
+  withCloseButton: true,
+  onClick: null,
 };
