@@ -10,13 +10,11 @@
         type: String as PropType<string>,
         required: true,
       },
-      type: {
-        type: String as PropType<string>,
+      checked: {
+        type: Boolean as PropType<boolean>,
+        default: false,
       },
       value: {
-        type: String as PropType<string>,
-      },
-      placeholder: {
         type: String as PropType<string>,
         default: null,
       },
@@ -32,11 +30,7 @@
         type: String as PropType<string>,
         default: null,
       },
-      multiline: {
-        type: Boolean as PropType<boolean>,
-        default: false,
-      },
-      helperText: {
+      labelDescription: {
         type: String as PropType<string>,
         default: null,
       },
@@ -45,35 +39,52 @@
       props = reactive(props);
       return {
         classes: computed(() => ({
-          "png-text-input": true,
+          "png-checkbox": true,
           "-error": props.error,
+          "relative flex items-start": props.labelText
         })),
-        wrapperClasses: computed(() => ({
-          "relative mt-1 rounded-md shadow-sm": props.error,
+        disabledClasses: computed(() => ({
+          "-disabled": props.disabled,
         })),
-        helperClasses: computed(() => ({
-          "png-text-input_helper-text": true,
-        })),
+        // wrapperClasses: computed(() => ({
+        //   "relative mt-1 rounded-md shadow-sm": props.error,
+        // })),
+        // helperClasses: computed(() => ({
+        //   "png-text-input_helper-text": true,
+        // })),
       };
     },
   });
 </script>
 
 <template>
-  <div class="relative flex items-start">
+  <div v-if="labelText" :class="classes">
     <div class="flex h-5 items-center">
       <input
-        id="comments"
-        aria-describedby="comments-description"
-        name="comments"
+        :id="name"
         type="checkbox"
-        class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+        :class="classes"
+        :checked="checked"
+        :value="value"
+        :aria-describedby="name + '-description'"
+        :disabled="disabled"
+        :aria-invalid="error && !disabled"
       />
     </div>
     <div class="ml-3 text-sm">
-      <label for="comments" class="font-medium text-gray-700">Comments</label>
-      <p id="comments-description" class="text-gray-500">Get notified when someones posts a comment on a posting.</p>
+      <label v-if="labelText" :for="name" class="font-medium text-gray-700">{{ labelText }}</label>
+      <p v-if="labelDescription" :id="name + '-description'" class="text-gray-500">{{ labelDescription }}</p>
     </div>
+  </div>
+  <div v-else :class="classes">
+    <input
+      :id="name"
+      type="checkbox"
+      :checked="checked"
+      :value="value"
+      :disabled="disabled"
+      :aria-invalid="error && !disabled"
+    />
   </div>
   <!-- <div :class="classes">
     <label :v-if="labelText" :for="name">{{ labelText }}</label>
